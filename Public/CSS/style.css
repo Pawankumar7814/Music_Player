@@ -1,0 +1,87 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: skew(10deg, 40deg);
+    }
+    100% {
+        transform: skew(20deg, 0deg);
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+}
+
+nav {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+nav ul li img {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    animation: rotate 3s infinite;
+}
+
+.user_img:hover {
+    animation: flip 0.8s both 1;
+}
+
+nav ul li nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: thistle;
+}
+
+nav ul li input {
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
+
+main {
+    background: saddlebrown;
+}
+
+aside {
+    background: #000;
+}
+
+footer {
+    background: darkslategray;
+}
